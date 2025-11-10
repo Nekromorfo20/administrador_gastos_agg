@@ -1,73 +1,37 @@
-# React + TypeScript + Vite
+# PROYECTO - Administrador de gastos"
+*Planificador de gastos y presupuestos.*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Sitio web - [administrador-gastos.com](https://administrador-gastos-agg.vercel.app/)*
 
-Currently, two official plugins are available:
+## Descrición:
+Proyecto del Curso de Udemy - "React y Typescript - La guia completa" - Proyecto Administrador de gastos web React y TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto se compone de una aplicación web que gestiona una lista de gastos con base en un presupuesto proporcionado por el usuario.
 
-## React Compiler
+La aplicación dispone de las siguientes características:
+* Pantallas de presupuesto y listado de gastos de acuerdo al tipo seleccionado.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### Desarrollado por:
 
-## Expanding the ESLint configuration
+**Alan Eduardo Aguilar Guerrero**  
+_UANL - Lic. Tecnología de Software (Desarrollador Junior)_
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Fecha de publicación:
+_Octubre 2025_
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Tecnologías implementadas:
+| Aplicación web      | Servicios adicionales |
+| ------------------- | --------------------- |
+| React               | Vercel                |
+| TypeScript          |                       |
+| TailwindCSS         |                       |
+| Redux               |                       |
+| ContexAPI           |                       |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Instrucciones para clonación e instalación de proyecto Web local:
+1. Descargue la herramienta de gestion de repositorios "Git"de la siguiente URL "https://git-scm.com/downloads
+2. Para instalar el proyecto Web desde una terminal (Simbolo del sistema) abra una terminal en su computadora y coloque la dirección del directorio donde desea instalar el proyecto y ejecute el comando `git clone https://github.com/Nekromorfo20/administrador_gastos_agg.git`
+3. Entre a la carpeta _administrador_gastos_agg_ con el comando `cd administrador_gastos_agg` y ejecute el comando `npm install` para instalar todas las dependencias.
+4. Ejecuta el comando `npm run dev` para inicial el proyecto Web.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+_Puede verificar que todo funciona correctamente ingresando a la URL http://localhost:5173/ donde estará desplegado el Proyecto web funcionando en conjunto con el proyecto API._
